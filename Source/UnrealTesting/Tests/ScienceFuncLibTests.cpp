@@ -3,6 +3,7 @@
 #if (WITH_DEV_AUTOMATION_TESTS || WITH_PERF_AUTOMATION_TESTS)
 
 #include "Tests/ScienceFuncLibTests.h"
+#include "Tests/TestUtils.h"
 #include "CoreMinimal.h"
 #include "Misc/AutomationTest.h"
 #include "Science/ScienceFuncLib.h"
@@ -33,13 +34,7 @@ bool FFibonacciSimple::RunTest(const FString& Parameters)
     TestTrueExpr(UScienceFuncLib::Fibonacci(3) == 2);
     TestTrueExpr(UScienceFuncLib::Fibonacci(4) == 3);
 
-    struct TestPayload
-    {
-        int32 TestValue;
-        int32 ExpectedValue;
-    };
-
-    const TArray<TestPayload> TestData{
+    const TArray<UnrealTesting::TestPayload<int32, int32>> TestData{
         {0, 0},
         {1, 1},
         {2, 1},
