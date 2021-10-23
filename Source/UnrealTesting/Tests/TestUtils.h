@@ -2,6 +2,8 @@
 
 namespace UnrealTesting
 {
+namespace Test
+{
     template<typename Type1, typename Type2>
     struct TestPayload
     {
@@ -10,5 +12,5 @@ namespace UnrealTesting
         float Tolerance = KINDA_SMALL_NUMBER;
     };
 }
-
+}
 

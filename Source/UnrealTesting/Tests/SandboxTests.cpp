@@ -24,7 +24,7 @@ IMPLEMENT_SIMPLE_AUTOMATION_TEST(
     "UnrealTesting.Math.Sin",
     EAutomationTestFlags::ApplicationContextMask | EAutomationTestFlags::ProductFilter | EAutomationTestFlags::HighPriority);
 
-using namespace UnrealTesting;
+using namespace UnrealTesting::Test;
 
 // функция для запуска теста
 // не важно что возвращает функция, главное что выводится в лог, если есть что то в логе то тест провален

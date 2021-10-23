@@ -34,7 +34,7 @@ bool FFibonacciSimple::RunTest(const FString& Parameters)
     TestTrueExpr(UScienceFuncLib::Fibonacci(3) == 2);
     TestTrueExpr(UScienceFuncLib::Fibonacci(4) == 3);
 
-    const TArray<UnrealTesting::TestPayload<int32, int32>> TestData{
+    const TArray<UnrealTesting::Test::TestPayload<int32, int32>> TestData{
         {0, 0},
         {1, 1},
         {2, 1},
